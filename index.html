@@ -3,84 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080d1b">
-  <meta name="description" content="Nguyễn Đăng Khôi — portfolio cá nhân về sáng tạo, công nghệ, hoạt động cộng đồng và hành trình phát triển.">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="description" content="Portfolio cá nhân của Nguyễn Đăng Khôi — học sinh, người yêu công nghệ, thiết kế sáng tạo và hoạt động cộng đồng.">
+  <meta name="keywords" content="Nguyễn Đăng Khôi, portfolio, lập trình web, thiết kế Canva, hoạt động Đoàn Đội">
+  <meta name="author" content="Nguyễn Đăng Khôi">
+  <meta property="og:title" content="Nguyễn Đăng Khôi — Personal Portfolio">
+  <meta property="og:description" content="Khám phá hành trình, kỹ năng và những dự án sáng tạo của Đăng Khôi.">
+  <meta property="og:type" content="website">
   <title>Nguyễn Đăng Khôi — Personal Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Nguyễn Đăng Khôi","url":"https://dangkhoinguyen7511.github.io/dang-khoi-portfolio/","sameAs":["https://github.com/DangkhoiNguyen7511"]}
+  </script>
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="grain"></div>
-  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="Đầu trang"><span class="brand-icon">K<span>.</span></span><span class="brand-word">DANG KHOI <small>PERSONAL PORTFOLIO</small></span></a>
-    <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav" aria-label="Điều hướng"><a href="#about">Về tôi</a><a href="#journey">Hành trình</a><a href="#skills">Năng lực</a><a href="#projects">Dự án</a></nav>
-    <a class="header-cta" href="#contact">Kết nối <span>↗</span></a>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Nguyễn Đăng Khôi - Trang chủ"><span class="brand-mark">K.</span><span>ĐĂNG KHÔI<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" aria-label="Mở menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <a href="#about">Về tôi</a><a href="#journey">Hành trình</a><a href="#skills">Kỹ năng</a><a href="#projects">Dự án</a><a class="nav-contact" href="#contact">Liên hệ <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <button class="theme-toggle" type="button" aria-label="Đổi giao diện sáng tối"><i class="fa-solid fa-moon"></i></button>
+      </nav>
+    </div>
   </header>
-  <main>
+
+  <main id="main">
     <section class="hero section" id="home">
-      <div class="hero-copy reveal">
-        <div class="availability"><i></i> ĐANG HỌC HỎI · ĐANG PHÁT TRIỂN</div>
-        <p class="hello">Xin chào, mình là</p>
-        <h1>Nguyễn Đăng<br><span class="gradient-text">Khôi<span class="period">.</span></span></h1>
-        <p class="hero-desc">Mình yêu thích công nghệ, thiết kế sáng tạo và những hoạt động kết nối con người. Mỗi trải nghiệm là một cơ hội để học thêm điều mới và tạo ra giá trị tốt hơn.</p>
-        <div class="hero-buttons"><a class="button button-primary" href="#about">Khám phá portfolio <span>↘</span></a><a class="button button-ghost" href="#projects">Xem dự án <span>↗</span></a></div>
-        <div class="hero-stats"><div><strong>01</strong><span>Không ngừng học hỏi</span></div><div><strong>02</strong><span>Chủ động sáng tạo</span></div><div><strong>03</strong><span>Cùng nhau tiến bộ</span></div></div>
+      <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> XIN CHÀO, MÌNH LÀ</div>
+          <h1>Nguyễn Đăng<br><span class="gradient-text">Khôi.</span></h1>
+          <p class="hero-role">Người trẻ yêu <span class="typed-word">công nghệ</span><span class="cursor">|</span></p>
+          <p class="hero-description">Mình thích biến những ý tưởng thành sản phẩm thực tế — từ website, thiết kế trực quan đến các hoạt động kết nối cộng đồng. Luôn tò mò, luôn học hỏi và luôn sẵn sàng thử điều mới.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#projects">Khám phá dự án <i class="fa-solid fa-arrow-right"></i></a><a class="btn btn-secondary" href="#contact">Liên hệ với mình</a></div>
+          <div class="hero-socials"><span>KẾT NỐI VỚI MÌNH</span><a href="https://github.com/DangkhoiNguyen7511" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a><a href="#contact" aria-label="Email"><i class="fa-regular fa-envelope"></i></a><a href="#about" aria-label="Tìm hiểu thêm"><i class="fa-solid fa-arrow-down"></i></a></div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="visual-backdrop"></div>
+          <div class="profile-card">
+            <div class="profile-top"><span class="window-dots"><i></i><i></i><i></i></span><span class="profile-label">PERSONAL PROFILE / 2026</span></div>
+            <div class="avatar-art" aria-label="Minh họa chữ K đại diện cho Đăng Khôi"><div class="avatar-ring ring-a"></div><div class="avatar-ring ring-b"></div><div class="avatar-letter">K<span>.</span></div><span class="floating-chip chip-code"><i class="fa-solid fa-code"></i> CREATE</span><span class="floating-chip chip-design"><i class="fa-solid fa-wand-magic-sparkles"></i> DESIGN</span></div>
+            <div class="profile-info"><div><h2>Đăng Khôi</h2><p>Learn · Build · Contribute</p></div><span class="profile-badge"><i class="fa-solid fa-bolt"></i></span></div>
+          </div>
+          <div class="floating-note note-top"><span class="note-icon"><i class="fa-solid fa-lightbulb"></i></span><span><strong>Luôn tò mò</strong><small>Không ngừng học hỏi</small></span></div>
+          <div class="floating-note note-bottom"><span class="note-icon cyan"><i class="fa-solid fa-people-group"></i></span><span><strong>Tinh thần đội nhóm</strong><small>Cùng nhau tạo giá trị</small></span></div>
+          <div class="visual-cross cross-one">✳</div><div class="visual-cross cross-two">✳</div>
+        </div>
       </div>
-      <div class="hero-visual reveal">
-        <div class="visual-grid"></div><div class="visual-ring ring-a"></div><div class="visual-ring ring-b"></div>
-        <div class="visual-core"><span class="core-k">K</span><span class="core-dot"></span></div>
-        <div class="float-chip chip-top"><span class="chip-icon">✳</span><div><small>CURRENT FOCUS</small><b>Learn by doing</b></div></div>
-        <div class="float-chip chip-bottom"><span class="chip-pulse"></span><div><small>PERSONAL MOTTO</small><b>Better, not perfect.</b></div><span class="chip-arrow">↗</span></div>
-        <div class="visual-index">FIG. 01 <span>— A WORK IN PROGRESS</span></div>
-      </div>
-      <a class="scroll-cue" href="#about"><span class="scroll-line"></span><span>CUỘN ĐỂ KHÁM PHÁ</span></a>
+      <a class="scroll-hint" href="#about"><span></span> CUỘN ĐỂ KHÁM PHÁ</a>
     </section>
+
     <section class="section about-section" id="about">
-      <div class="section-kicker reveal"><span>01</span><span> / ABOUT ME</span></div>
-      <div class="section-title-row reveal"><h2>Mình tin vào sức mạnh<br>của việc <em>bắt đầu.</em></h2><p>Không cần biết hết mọi thứ mới bắt đầu. Điều quan trọng là giữ sự tò mò, tinh thần trách nhiệm và lòng can đảm để thử.</p></div>
-      <div class="about-grid">
-        <div class="about-card reveal"><div class="about-card-top"><span>THE PERSON BEHIND THE SCREEN</span><span>✳</span></div><div class="about-monogram">K<span>.</span></div><div class="about-card-bottom"><strong>Nguyễn Đăng Khôi</strong><span>Student · Creator · Learner</span></div></div>
-        <div class="about-copy reveal"><p>Mình là người thích khám phá những cách mới để thể hiện ý tưởng — từ thiết kế bài thuyết trình, xây dựng website đến tổ chức hoạt động tập thể. Mình cũng trân trọng những trải nghiệm giúp rèn luyện khả năng lắng nghe, phối hợp và dẫn dắt bằng tinh thần trách nhiệm.</p><p>Portfolio này là một góc nhỏ ghi lại điều mình quan tâm, những kỹ năng đang phát triển và các dự án mình muốn tiếp tục hoàn thiện.</p><div class="principles"><div><span>01</span><div><b>Tò mò</b><small>Luôn đặt câu hỏi và học thêm</small></div></div><div><span>02</span><div><b>Chủ động</b><small>Biến ý tưởng thành hành động</small></div></div><div><span>03</span><div><b>Cống hiến</b><small>Tạo giá trị cùng mọi người</small></div></div></div></div>
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">01 / VỀ TÔI</p><h2>Mỗi ngày một phiên bản<br><span class="gradient-text">tốt hơn của chính mình.</span></h2><p class="section-intro">Mình tin rằng sự tiến bộ bắt đầu từ tinh thần chủ động: dám thử, dám sửa và không ngừng hoàn thiện.</p></div>
+        <div class="about-grid">
+          <article class="about-card about-main reveal"><div class="card-icon"><i class="fa-regular fa-compass"></i></div><h3>Mình là ai?</h3><p>Mình là Đăng Khôi — một người trẻ quan tâm đến công nghệ, sáng tạo nội dung và các hoạt động tập thể. Mình yêu cảm giác học được điều mới rồi ứng dụng nó để giải quyết một vấn đề cụ thể.</p><p>Với mình, một ý tưởng tốt chỉ thực sự có ý nghĩa khi được thực hiện chỉn chu và tạo ra giá trị cho những người xung quanh.</p></article>
+          <article class="about-card value-card reveal"><span class="value-number">01</span><div class="card-icon"><i class="fa-solid fa-brain"></i></div><h3>Tư duy phát triển</h3><p>Chủ động học hỏi, tiếp nhận góp ý và xem thử thách là cơ hội trưởng thành.</p></article>
+          <article class="about-card value-card reveal"><span class="value-number">02</span><div class="card-icon"><i class="fa-solid fa-people-group"></i></div><h3>Tinh thần cống hiến</h3><p>Trân trọng sức mạnh tập thể và mong muốn đóng góp bằng những việc làm thiết thực.</p></article>
+        </div>
+        <div class="stats-row reveal"><div class="stat"><strong>01</strong><span>Tinh thần chủ động</span></div><div class="stat"><strong>02</strong><span>Không ngừng sáng tạo</span></div><div class="stat"><strong>∞</strong><span>Điều muốn học hỏi</span></div></div>
       </div>
     </section>
+
     <section class="section journey-section" id="journey">
-      <div class="section-kicker reveal"><span>02</span><span> / MY JOURNEY</span></div>
-      <div class="section-title-row reveal"><h2>Mỗi trải nghiệm<br>để lại một <em>dấu ấn.</em></h2><p>Hành trình không chỉ được đo bằng thành tích, mà còn bằng những điều mình học được và cách mình trưởng thành.</p></div>
-      <div class="journey-list">
-        <article class="journey-item reveal"><div class="journey-no">01</div><div class="journey-label">LEADERSHIP</div><div class="journey-body"><h3>Hoạt động Đội & kết nối tập thể</h3><p>Từng đảm nhiệm vai trò Liên Đội Trưởng, có cơ hội rèn luyện tinh thần trách nhiệm, phối hợp tổ chức hoạt động và lắng nghe các thành viên.</p><div class="mini-tags"><span>Lãnh đạo</span><span>Phối hợp</span><span>Trách nhiệm</span></div></div><span class="journey-mark">↗</span></article>
-        <article class="journey-item reveal"><div class="journey-no">02</div><div class="journey-label">DIGITAL CREATIVITY</div><div class="journey-body"><h3>Thiết kế và xây dựng sản phẩm số</h3><p>Tìm hiểu cách dùng công cụ thiết kế và công nghệ web để biến ý tưởng thành sản phẩm có thể sử dụng, xem và chia sẻ.</p><div class="mini-tags"><span>Canva</span><span>HTML & CSS</span><span>JavaScript</span></div></div><span class="journey-mark">↗</span></article>
-        <article class="journey-item reveal"><div class="journey-no">03</div><div class="journey-label">PERSONAL GROWTH</div><div class="journey-body"><h3>Học hỏi qua từng lần thử</h3><p>Chủ động đón nhận góp ý, thử sức với những nhiệm vụ mới và xem khó khăn là cơ hội để điều chỉnh cách làm.</p><div class="mini-tags"><span>Kiên trì</span><span>Tư duy mở</span><span>Phản hồi</span></div></div><span class="journey-mark">↗</span></article>
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">02 / HÀNH TRÌNH</p><h2>Những trải nghiệm<br><span class="gradient-text">tạo nên mình hôm nay.</span></h2><p class="section-intro">Mỗi vai trò và dự án là một cơ hội rèn luyện kỹ năng, trách nhiệm và cách làm việc cùng mọi người.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><div class="timeline-marker"><i class="fa-solid fa-flag"></i></div><div class="timeline-content"><span class="timeline-date">HOẠT ĐỘNG TRƯỜNG</span><h3>Liên Đội Trưởng</h3><p>Từng đảm nhiệm vai trò Liên Đội Trưởng tại THCS Nguyễn Trãi, có cơ hội rèn luyện tinh thần trách nhiệm, phối hợp tập thể và tổ chức hoạt động.</p><div class="tag-row"><span>Leadership</span><span>Teamwork</span><span>Communication</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-marker"><i class="fa-solid fa-laptop-code"></i></div><div class="timeline-content"><span class="timeline-date">CÔNG NGHỆ & LẬP TRÌNH</span><h3>Tự học và xây dựng website</h3><p>Tìm hiểu HTML, CSS, JavaScript, GitHub và từng thực hành xây dựng giao diện web để đưa kiến thức vào sản phẩm thực tế.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span></div></div></article>
+          <article class="timeline-item reveal"><div class="timeline-marker"><i class="fa-solid fa-palette"></i></div><div class="timeline-content"><span class="timeline-date">THIẾT KẾ & SÁNG TẠO</span><h3>Biến ý tưởng thành hình ảnh</h3><p>Quan tâm đến thiết kế slide, hình ảnh truyền thông và cách trình bày nội dung rõ ràng, dễ hiểu bằng các công cụ sáng tạo như Canva.</p><div class="tag-row"><span>Canva</span><span>Visual Design</span><span>Storytelling</span></div></div></article>
+        </div>
       </div>
     </section>
+
     <section class="section skills-section" id="skills">
-      <div class="section-kicker reveal"><span>03</span><span> / MY TOOLBOX</span></div>
-      <div class="section-title-row reveal"><h2>Công cụ để biến<br>ý tưởng thành <em>giá trị.</em></h2><p>Đây là những lĩnh vực mình đang thực hành và tiếp tục trau dồi — không ngừng cập nhật qua dự án thực tế.</p></div>
-      <div class="skills-grid">
-        <article class="skill-card reveal"><div class="skill-card-head"><span>01 / CREATIVE</span><span class="skill-glyph">✳</span></div><h3>Thiết kế & trình bày</h3><p>Trình bày thông tin rõ ràng, chọn bố cục phù hợp và tạo điểm nhấn cho nội dung.</p><div class="skill-tags"><span>Canva</span><span>Visual layout</span><span>Storytelling</span></div><div class="skill-bottom"><span>IDEA → VISUAL</span><span>↗</span></div></article>
-        <article class="skill-card reveal"><div class="skill-card-head"><span>02 / TECHNOLOGY</span><span class="skill-glyph">⌘</span></div><h3>Phát triển website</h3><p>Xây dựng giao diện web, chỉnh sửa mã nguồn và tìm hiểu quy trình đưa sản phẩm lên mạng.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub</span></div><div class="skill-bottom"><span>CODE → EXPERIENCE</span><span>↗</span></div></article>
-        <article class="skill-card reveal"><div class="skill-card-head"><span>03 / PEOPLE</span><span class="skill-glyph">↗</span></div><h3>Làm việc cùng mọi người</h3><p>Lắng nghe, trao đổi, phối hợp thực hiện nhiệm vụ và cùng hướng đến mục tiêu chung.</p><div class="skill-tags"><span>Giao tiếp</span><span>Teamwork</span><span>Điều phối</span></div><div class="skill-bottom"><span>PEOPLE → IMPACT</span><span>↗</span></div></article>
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">03 / KỸ NĂNG</p><h2>Công cụ mình dùng để<br><span class="gradient-text">biến ý tưởng thành hiện thực.</span></h2><p class="section-intro">Đây là những kỹ năng mình đang sử dụng và tiếp tục trau dồi qua từng sản phẩm.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-card-head"><span class="skill-icon purple"><i class="fa-solid fa-code"></i></span><span class="skill-index">01</span></div><h3>Phát triển web</h3><p>Xây dựng giao diện và thử nghiệm các chức năng web cơ bản.</p><div class="skill-pills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive</span></div></article>
+          <article class="skill-card reveal"><div class="skill-card-head"><span class="skill-icon cyan"><i class="fa-solid fa-pen-ruler"></i></span><span class="skill-index">02</span></div><h3>Thiết kế trực quan</h3><p>Trình bày thông tin sinh động, có hệ thống và nhất quán về thị giác.</p><div class="skill-pills"><span>Canva</span><span>Slide design</span><span>Visual content</span></div></article>
+          <article class="skill-card reveal"><div class="skill-card-head"><span class="skill-icon green"><i class="fa-brands fa-github"></i></span><span class="skill-index">03</span></div><h3>Công cụ & quy trình</h3><p>Lưu trữ mã nguồn, cập nhật phiên bản và tổ chức công việc cá nhân.</p><div class="skill-pills"><span>GitHub</span><span>VS Code</span><span>Problem solving</span></div></article>
+          <article class="skill-card reveal"><div class="skill-card-head"><span class="skill-icon orange"><i class="fa-solid fa-comments"></i></span><span class="skill-index">04</span></div><h3>Kỹ năng cộng tác</h3><p>Lắng nghe, phối hợp, trình bày ý tưởng và chủ động nhận trách nhiệm.</p><div class="skill-pills"><span>Teamwork</span><span>Communication</span><span>Leadership</span></div></article>
+        </div>
+        <p class="skills-note"><i class="fa-solid fa-circle-info"></i> Kỹ năng được trình bày theo trải nghiệm hiện tại; mình vẫn đang học hỏi và hoàn thiện mỗi ngày.</p>
       </div>
     </section>
+
     <section class="section projects-section" id="projects">
-      <div class="section-kicker reveal"><span>04</span><span> / SELECTED WORK</span></div>
-      <div class="section-title-row reveal"><h2>Ý tưởng đang<br>thành <em>hình.</em></h2><p>Một số hướng dự án và sản phẩm sáng tạo mình muốn lưu lại, phát triển và bổ sung dần vào portfolio.</p></div>
-      <div class="projects-grid">
-        <article class="project-card project-main reveal"><div class="project-art art-portfolio"><div class="art-top"><span>DK / 001</span><span>PERSONAL WEB</span></div><div class="art-letters">D<span>.</span>K</div><div class="art-window"><div class="window-bar"><i></i><i></i><i></i><span>portfolio / home</span></div><div class="window-content"><b>Make it<br><em>meaningful.</em></b><span></span><span></span></div></div><span class="art-orbit"></span></div><div class="project-description"><div><span class="project-category">01 — WEB DEVELOPMENT</span><h3>Portfolio cá nhân</h3><p>Một không gian số giới thiệu bản thân, năng lực và hành trình học hỏi, thiết kế theo hướng hiện đại và responsive.</p></div><a class="project-link" href="https://github.com/DangkhoiNguyen7511/dang-khoi-portfolio" target="_blank" rel="noopener noreferrer" aria-label="Mở repository portfolio">↗</a></div></article>
-        <article class="project-card reveal"><div class="project-art art-design"><div class="art-top"><span>DK / 002</span><span>DESIGN STUDY</span></div><div class="design-orb orb-one"></div><div class="design-orb orb-two"></div><div class="design-copy">IDEAS<br>INTO<br><em>IMPACT.</em></div><span class="design-cross">✳</span></div><div class="project-description"><div><span class="project-category">02 — VISUAL DESIGN</span><h3>Thiết kế sáng tạo</h3><p>Bài thuyết trình, hình ảnh và bố cục trực quan phục vụ học tập, truyền thông và hoạt động tập thể.</p></div><span class="project-link static-mark">✳</span></div></article>
-        <article class="project-card reveal"><div class="project-art art-community"><div class="art-top"><span>DK / 003</span><span>COMMUNITY</span></div><div class="community-ring"><span>LISTEN</span><b>TOGETHER</b><span>CREATE</span></div><div class="community-note">Small actions.<br>Shared progress.</div></div><div class="project-description"><div><span class="project-category">03 — COMMUNITY & LEADERSHIP</span><h3>Hoạt động cộng đồng</h3><p>Trải nghiệm phối hợp tổ chức, xây dựng tinh thần tập thể và cùng mọi người hướng đến mục tiêu chung.</p></div><span class="project-link static-mark">✳</span></div></article>
+      <div class="container">
+        <div class="section-heading reveal"><p class="section-kicker">04 / DỰ ÁN</p><h2>Ý tưởng được bắt đầu<br><span class="gradient-text">bằng hành động.</span></h2><p class="section-intro">Một vài hướng dự án thể hiện điều mình yêu thích. Mình sẽ tiếp tục cập nhật sản phẩm, hình ảnh và đường dẫn thực tế tại đây.</p></div>
+        <div class="projects-grid">
+          <article class="project-card reveal"><div class="project-art art-blue"><div class="browser-window"><div class="browser-bar"><i></i><i></i><i></i><span>portfolio.site</span></div><div class="browser-content"><span class="mock-label">HELLO, I'M</span><strong>Creative<br>Developer<span>.</span></strong><div class="mock-lines"><i></i><i></i></div><div class="mock-button"></div></div></div><span class="art-orbit"></span></div><div class="project-body"><div class="project-meta"><span>WEB DEVELOPMENT</span><span class="project-number">01</span></div><h3>Personal Portfolio</h3><p>Website cá nhân một trang để giới thiệu bản thân, kỹ năng, hành trình và các dự án.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/DangkhoiNguyen7511/dang-khoi-portfolio" target="_blank" rel="noreferrer">Xem mã nguồn <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+          <article class="project-card reveal"><div class="project-art art-cyan"><div class="design-sheet"><span class="sheet-kicker">IDEA → DESIGN</span><strong>MAKE<br>IT <em>MATTER.</em></strong><div class="sheet-shape shape-one"></div><div class="sheet-shape shape-two"></div><span class="sheet-footer">VISUAL COMMUNICATION / 01</span></div><span class="art-spark">✳</span></div><div class="project-body"><div class="project-meta"><span>VISUAL DESIGN</span><span class="project-number">02</span></div><h3>Thiết kế truyền thông</h3><p>Ý tưởng thiết kế slide, poster và nội dung trực quan cho hoạt động học tập hoặc tập thể.</p><div class="tag-row"><span>Canva</span><span>Layout</span><span>Typography</span></div><a class="project-link" href="https://www.canva.com/" target="_blank" rel="noreferrer">Công cụ sử dụng <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></article>
+          <article class="project-card reveal"><div class="project-art art-violet"><div class="community-art"><div class="people-icons"><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></div><strong>BETTER<br><span>TOGETHER</span></strong><div class="community-line"></div><small>CONNECT · CONTRIBUTE · GROW</small></div><span class="community-star">✦</span></div><div class="project-body"><div class="project-meta"><span>COMMUNITY</span><span class="project-number">03</span></div><h3>Hoạt động cộng đồng</h3><p>Những ý tưởng tổ chức hoạt động tập thể, lan tỏa tinh thần hợp tác và đóng góp tích cực.</p><div class="tag-row"><span>Teamwork</span><span>Planning</span><span>Leadership</span></div><a class="project-link" href="#contact">Trao đổi về ý tưởng <i class="fa-solid fa-arrow-right"></i></a></div></article>
+        </div>
+        <div class="project-disclaimer"><i class="fa-regular fa-lightbulb"></i> Hai mục thiết kế và cộng đồng đang là phần giới thiệu định hướng. Hãy thay bằng sản phẩm thật khi có link hoặc hình ảnh hoàn chỉnh.</div>
       </div>
-      <p class="project-note"><span>NOTE</span> Các mục trên là phần giới thiệu định hướng và sản phẩm cá nhân; nội dung sẽ được cập nhật thêm khi có dự án, hình ảnh và kết quả thực tế.</p>
     </section>
+
     <section class="section contact-section" id="contact">
-      <div class="contact-panel reveal"><div class="contact-grid"></div><div class="contact-copy"><div class="section-kicker"><span>05</span><span> / LET'S CONNECT</span></div><h2>Một ý tưởng hay<br>có thể bắt đầu từ<br><em>một cuộc trò chuyện.</em></h2><p>Cảm ơn bạn đã dành thời gian ghé thăm portfolio của mình. Hẹn gặp bạn ở một ý tưởng tiếp theo!</p><a class="button button-primary" href="https://github.com/DangkhoiNguyen7511" target="_blank" rel="noopener noreferrer">Tìm mình trên GitHub <span>↗</span></a></div><div class="contact-stamp">LET'S<br><span>MAKE</span><br>THINGS.</div></div>
+      <div class="container contact-grid">
+        <div class="contact-copy reveal"><p class="section-kicker">05 / LIÊN HỆ</p><h2>Cùng nhau tạo nên<br><span class="gradient-text">điều thú vị nhé!</span></h2><p>Nếu bạn muốn trao đổi về một ý tưởng, dự án hoặc hoạt động cộng đồng, mình rất sẵn lòng kết nối.</p><div class="contact-details"><a href="https://github.com/DangkhoiNguyen7511" target="_blank" rel="noreferrer"><span class="contact-icon"><i class="fa-brands fa-github"></i></span><span><small>GITHUB</small><strong>DangkhoiNguyen7511</strong></span><i class="fa-solid fa-arrow-up-right-from-square detail-arrow"></i></a><div class="contact-detail-note"><span class="contact-icon"><i class="fa-regular fa-envelope"></i></span><span><small>EMAIL</small><strong>Thêm email của bạn tại đây</strong></span></div></div></div>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-heading"><span class="form-icon"><i class="fa-regular fa-paper-plane"></i></span><div><h3>Gửi lời nhắn</h3><p>Mình sẽ rất vui khi nhận được tin từ bạn.</p></div></div>
+          <label for="name">Họ và tên</label><input id="name" name="name" type="text" placeholder="Tên của bạn" autocomplete="name" required>
+          <label for="email">Email</label><input id="email" name="email" type="email" placeholder="ban@example.com" autocomplete="email" required>
+          <label for="message">Lời nhắn</label><textarea id="message" name="message" rows="4" placeholder="Bạn muốn trao đổi điều gì?" required></textarea>
+          <button class="btn btn-primary form-submit" type="submit">Soạn email <i class="fa-solid fa-arrow-right"></i></button>
+          <p class="form-note" id="form-note">Biểu mẫu sẽ mở ứng dụng email trên thiết bị của bạn; cần bổ sung địa chỉ email thật để gửi tin nhắn.</p>
+        </form>
+      </div>
     </section>
   </main>
-  <footer class="footer"><a class="brand" href="#home"><span class="brand-icon">K<span>.</span></span><span class="brand-word">DANG KHOI <small>PERSONAL PORTFOLIO</small></span></a><p>Made with curiosity & intention.</p><div class="footer-right"><a href="#home">Về đầu trang ↑</a><span>© <span id="year"></span> NGUYỄN ĐĂNG KHÔI</span></div></footer>
-  <button class="back-to-top" id="backToTop" aria-label="Về đầu trang">↑</button>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand footer-brand" href="#home"><span class="brand-mark">K.</span><span>ĐĂNG KHÔI<span class="brand-dot">.</span></span></a><p>Được tạo bằng sự tò mò và tinh thần không ngừng học hỏi.</p><span class="copyright">© <span id="year"></span> Nguyễn Đăng Khôi. Made with <i class="fa-solid fa-heart"></i></span></div></footer>
+  <button class="back-to-top" type="button" aria-label="Lên đầu trang"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="script.js"></script>
 </body>
 </html>
